@@ -84,19 +84,21 @@ function Lens({ modeProps, children }: any) {
 }
 
 function Typography() {
-    const DEVICE = {
+    type DeviceType = 'mobile' | 'tablet' | 'desktop';
+
+    const DEVICE: Record<DeviceType, { fontSize: number }> = {
         mobile: { fontSize: 0.3 },
         tablet: { fontSize: 0.5 },
         desktop: { fontSize: 0.8 }
     };
 
-    const getDevice = () => {
+    const getDevice = (): DeviceType => {
         if (typeof window === 'undefined') return 'desktop';
         const w = window.innerWidth;
         return w <= 639 ? 'mobile' : w <= 1023 ? 'tablet' : 'desktop';
     };
 
-    const [device, setDevice] = useState(getDevice());
+    const [device, setDevice] = useState<DeviceType>(getDevice());
 
     useEffect(() => {
         const onResize = () => setDevice(getDevice());
