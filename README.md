@@ -226,23 +226,6 @@ Same format as Claude. Restart ChatGPT Desktop.
 
 ---
 
-## Quick Start
-
-### Deploy to Vercel
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/codewithadvi/Explainr)
-
-**Required Environment Variables:**
-```env
-GROQ_API_KEY=your_groq_key
-GOOGLE_GEMINI_API_KEY=your_gemini_key
-```
-
-**Get Free API Keys:**  
-→ [Groq Console](https://console.groq.com/keys)  
-→ [Google AI Studio](https://aistudio.google.com/app/apikey)
-
----
 
 ## Technology Stack
 
@@ -272,27 +255,6 @@ GOOGLE_GEMINI_API_KEY=your_gemini_key
 
 ---
 
-## Contributing
-
-Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-**Ways to Contribute:**
-- Report bugs or suggest features
-- Add new AI personas
-- Enhance visualizations
-- Improve documentation
-
----
-
-## License
-
-MIT License - see [LICENSE](LICENSE) for details.
-
----
-
-<div align="center">
-
-**Built for learners who refuse to settle for surface-level understanding**
 
 [⭐ Star](https://github.com/codewithadvi/Explainr) • [🐛 Issues](https://github.com/codewithadvi/Explainr/issues) • [💡 Features](https://github.com/codewithadvi/Explainr/issues)
 
