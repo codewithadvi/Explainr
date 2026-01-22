@@ -1,0 +1,20 @@
+{
+    "name": "feynman-mirror-mcp",
+    "version": "1.0.0",
+    "description": "MCP Server for Feynman Mirror - Expose knowledge graph and learning data to AI clients",
+    "type": "module",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "dev": "tsc && node dist/index.js"
+    },
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^1.0.0",
+        "zod": "^3.22.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.0.0",
+        "typescript": "^5.0.0"
+    }
+}
