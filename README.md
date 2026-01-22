@@ -166,68 +166,12 @@ graph TB
     style Galaxy fill:#c800ff,stroke:#0a0a0a,stroke-width:2px,color:#fff
     style Analysis fill:#ffc800,stroke:#0a0a0a,stroke-width:2px,color:#0a0a0a
 ```
-
----
-
-## User Flow
-
-```mermaid
-sequenceDiagram
-    participant User
-    participant Explainr
-    participant AI as AI Persona
-    participant KG as Knowledge Graph
-    participant Stats as Progress Tracker
-    
-    User->>Explainr: Select Topic & Persona
-    Explainr->>User: Initialize Voice Session
-    
-    loop Learning Loop
-        User->>Explainr: Explain Concept (Voice)
-        Explainr->>AI: Transcribe & Analyze
-        AI->>Explainr: Confusion Score + Gaps
-        Explainr->>User: Visual Feedback (Liquid Avatar)
-        AI->>User: Probing Question
-        User->>Explainr: Refine Explanation
-        Explainr->>AI: Re-analyze Understanding
-        
-        alt Understanding Verified
-            AI->>Explainr: VERIFIED Tag
-            Explainr->>KG: Update Mastery +10%
-            Explainr->>Stats: Award XP
-        else Gaps Remain
-            AI->>Explainr: PROBE/CORRECTION Tag
-            AI->>User: Targeted Feedback
-        end
-    end
-    
-    Explainr->>KG: Rebuild Semantic Connections
-    KG->>User: Render Knowledge Galaxy
-    Stats->>User: Update Streak & Level
-    Explainr->>User: Session Summary
-```
-
 ---
 
 ## Quick Start
 
 ### **Use the Live App**
 Visit **[explainr.vercel.app](https://explainr.vercel.app)** and start learning immediately. No installation required.
-
-### **Deploy Your Own Instance**
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YOUR_USERNAME/explainr)
-
-**Required Environment Variables:**
-```env
-GROQ_API_KEY=your_groq_key_here
-GOOGLE_GEMINI_API_KEY=your_gemini_key_here
-```
-
-**Get Free API Keys:**
-- **Groq** (Primary AI): [console.groq.com/keys](https://console.groq.com/keys)
-- **Gemini** (Fallback): [aistudio.google.com/apikey](https://aistudio.google.com/app/apikey)
-
----
 
 ## MCP Server Integration
 
@@ -441,44 +385,9 @@ Same configuration format as Claude. Restart ChatGPT Desktop after adding.
 
 ---
 
-## Contributing
-
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-**Ways to Contribute:**
-- Report bugs or suggest features
-- Improve documentation
-- Add new AI personas
-- Enhance visualizations
-- Optimize performance
-
----
-
 ## License
 
 MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-## Acknowledgments
-
-**Inspired by:**
-- Richard Feynman's teaching philosophy
-- Active recall research in cognitive science
-- Spaced repetition learning systems
-
-**Built with:**
-- Next.js by Vercel
-- Groq's lightning-fast inference
-- Google's Gemini AI
-- Anthropic's Model Context Protocol
-
----
-
-<div align="center">
-
-**Built for learners who refuse to settle for surface-level understanding**
-
-[Star this repo](https://github.com/YOUR_USERNAME/explainr) • [Report Bug](https://github.com/YOUR_USERNAME/explainr/issues) • [Request Feature](https://github.com/YOUR_USERNAME/explainr/issues)
-
-</div>
