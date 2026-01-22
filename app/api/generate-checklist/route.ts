@@ -67,6 +67,7 @@ export async function POST(req: NextRequest) {
                 throw new Error("No Groq key");
             }
         } catch (error) {
+            // Fallback to Gemini if Groq fails
             logger.warn("Groq failed, trying Gemini", { requestId }, error as Error);
             // Fallback to Gemini
             const geminiKey = process.env.GOOGLE_GEMINI_API_KEY;
