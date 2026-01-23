@@ -38,7 +38,7 @@
 
 ## The Story Behind Explainr
 
-My dad always told me something that stuck with me through every exam, every interview, and every late-night debugging session:
+My dad always told me something that stuck with me:
 
 > **"If you can't explain something, you don't really know it."**
 
