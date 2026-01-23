@@ -50,7 +50,7 @@ When you explain something technical to a complete beginner, they start from zer
 
 This is the Feynman Technique in action, and it works because active recall and teaching are the most powerful learning methods we know of.
 
-I built Explainr because I wanted a way to practice this technique anytime, anywhere, without needing to find a patient friend willing to listen to me ramble about distributed systems at 2 AM.
+I built Explainr because I wanted a way to practice this technique anytime, anywhere, without needing to find a patient friend willing to listen to me ramble about transformers at 2 AM.
 
 Whether you are a student mastering difficult subjects, a developer learning new technologies, or even a CTO who needs to explain technical concepts to clients and customers of all backgrounds, **the ability to make the complex simple is the ultimate proof of understanding.**
 
